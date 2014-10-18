@@ -1,5 +1,12 @@
 locations:
+  world: world
   rg-low:
+    x: 48
+    y: 62
+    z: 249
   rg-high:
+    x: 34
+    y: 69
+    z: 234
   start:
   end:

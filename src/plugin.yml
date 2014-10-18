@@ -1,3 +1,7 @@
 name: Runner
 main: com.github.cn0.Runner.Main
 version: 0.1 INDEV
+commands:
+     setloc:
+          description: Sets location.
+          usage: /setloc [ world | Locname ]
