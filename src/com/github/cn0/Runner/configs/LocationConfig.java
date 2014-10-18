@@ -11,75 +11,75 @@ import org.bukkit.Location;
 public class LocationConfig {
 
     @Getter
-    @Path("location.world")
+    @Path("locations.world")
     public static String world;
 
 
     @Getter
-    @Path("location.rg-low.x")
-    public static double rgLowX;
+    @Path("locations.rg-low.x")
+    public static int rgLowX;
 
     @Getter
-    @Path("location.rg-low.y")
-    public static double rgLowY;
+    @Path("locations.rg-low.y")
+    public static int rgLowY;
 
     @Getter
-    @Path("location.rg-low.z")
-    public static double rgLowZ;
+    @Path("locations.rg-low.z")
+    public static int rgLowZ;
 
     @Getter
-    @Path("location.rg-high.x")
-    public static double rgHighX;
+    @Path("locations.rg-high.x")
+    public static int rgHighX;
 
     @Getter
-    @Path("location.rg-high.y")
-    public static double rgHighY;
+    @Path("locations.rg-high.y")
+    public static int rgHighY;
 
     @Getter
-    @Path("location.rg-high.z")
-    public static double rgHighZ;
+    @Path("locations.rg-high.z")
+    public static int rgHighZ;
 
 /*
 
     @Getter
-    @Path("location.start.x")
+    @Path("locations.start.x")
     public static double startX;
 
     @Getter
-    @Path("location.start.y")
+    @Path("locations.start.y")
     public static double startY;
 
     @Getter
-    @Path("location.start.z")
+    @Path("locations.start.z")
     public static double startZ;
 
     @Getter
-    @Path("location.start.yaw")
+    @Path("locations.start.yaw")
     public static double startYaw;
 
     @Getter
-    @Path("location.start.pitch")
+    @Path("locations.start.pitch")
     public static double startPitch;
 
 
     @Getter
-    @Path("location.end.x")
+    @Path("locations.end.x")
     public static double endX;
 
     @Getter
-    @Path("location.end.y")
+    @Path("locations.end.y")
     public static double endY;
 
     @Getter
-    @Path("location.end.z")
+    @Path("locations.end.z")
     public static double endZ;
 
     @Getter
-    @Path("location.end.yaw")
+    @Path("locations.end.yaw")
     public static double endYaw;
 
     @Getter
-    @Path("location.end.pitch")
+    @Path("locations.end.pitch")
     public static double endPitch;
 */
     @Getter public static Location rgLow = new Location(Bukkit.getWorld(getWorld()), getRgLowX(), getRgLowY(), getRgLowZ());

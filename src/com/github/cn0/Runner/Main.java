@@ -32,7 +32,7 @@ public class Main extends JavaPlugin {
         System.out.println("Built String:");
         StringHelper.getArgs("ein zwei drei zeilen").stream().forEach(s -> System.out.println(s));
 
-        new RegionHelper(LocationConfig.getRgLow(), LocationConfig.getRgHigh(), Bukkit.getWorld(LocationConfig.getWorld())).checkCommandBlocks();
+        new RegionHelper(LocationConfig.rgLow, LocationConfig.rgHigh).checkCommandBlocks();
 
     }
 

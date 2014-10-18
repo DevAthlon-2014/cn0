@@ -19,13 +19,13 @@ public class ConfigAnnoReader {
     public static <T> void initConfig(Class<T> configClass, FileConfiguration configuration) {
         try {
             T instance = configClass.newInstance();
-            for (Field field : configClass.getFields()) {
-                if (field.isAnnotationPresent(Path.class))
+            for(Field field : configClass.getFields()) {
+                if(field.isAnnotationPresent(Path.class))
                     field.set(instance, configuration.get(field.getAnnotation(Path.class).value()));
             }
-        } catch (InstantiationException e) {
+        } catch(InstantiationException e) {
             e.printStackTrace();
-        } catch (IllegalAccessException e) {
+        } catch(IllegalAccessException e) {
             e.printStackTrace();
         }
     }

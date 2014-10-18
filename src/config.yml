@@ -1,5 +1,5 @@
 locations:
-  world: world
+  world: "world"
   rg-low:
     x: 48
     y: 62
